@@ -15,17 +15,36 @@
         }
         header {
             background-color: #f7f7f7;
-            color: #333;
-            padding: 50px 0;
-            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        header h1 {
+        .profile-section {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+            margin-right: 20px;
+        }
+        .profile-details {
+            flex-grow: 1;
+        }
+        .profile-details h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 2.5em;
         }
-        header p {
+        .profile-details p {
+            margin: 10px 0;
             font-size: 1.2em;
-            margin: 10px 0 0;
         }
         nav {
             text-align: center;
@@ -51,16 +70,6 @@
         .content {
             margin: 20px 0;
         }
-        .profile-picture {
-            display: block;
-            margin: 20px auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: #ddd;
-            background-size: cover;
-            background-position: center;
-        }
         footer {
             text-align: center;
             padding: 20px 0;
@@ -72,9 +81,14 @@
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <img src="https://raw.githubusercontent.com/avitabilea/avitabilea.github.io/master/IMG_5988.JPG" alt="Your Photo" class="profile-picture">
-        <p>Personal Website</p>
+        <div class="profile-section">
+            <div class="profile-picture" style="background-image: url('https://raw.githubusercontent.com/avitabilea/avitabilea.github.io/master/IMG_5988.JPG');"></div>
+            <div class="profile-details">
+                <h1>Your Name</h1>
+                <p>PhD Student in Education Policy at the University of Virginia</p>
+                <p>Hi! I am a PhD student in Education Policy at the University of Virginia. My research interests are in teacher labor markets and evaluating education policies in low- and middle-income countries. Prior to starting a PhD, I worked at the Indeed Hiring Lab, J-PAL, Mais Caminhos, MDRC, and NERA Economic Consulting.</p>
+            </div>
+        </div>
     </header>
     <nav>
         <a href="#home">Home</a>
