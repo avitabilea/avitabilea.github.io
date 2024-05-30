@@ -1,0 +1,15 @@
+# Site settings
+title: My GitHub Pages Site
+description: This is my site description.
+
+# Theme settings
+remote_theme: jekyll/minima
+
+# Other possible configurations
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site settings
+author: Your Name
+email: you@example.com
