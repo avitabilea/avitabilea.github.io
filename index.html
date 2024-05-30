@@ -22,11 +22,9 @@
         }
         .profile-section {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 800px;
+            align-items: flex-start;
+            max-width: 1200px;
             width: 100%;
-            text-align: center;
         }
         .profile-picture {
             width: 400px;
@@ -35,10 +33,14 @@
             background-color: #ddd;
             background-size: cover;
             background-position: center;
-            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        .profile-details {
+            flex-grow: 1;
+            text-align: center;
         }
         .profile-details h1 {
-            margin: 0;
+            margin: 20px 0 0 0;
             font-size: 2.5em;
         }
         .profile-details p {
@@ -47,9 +49,10 @@
         }
         .description {
             margin-top: 20px;
+            text-align: left;
         }
         .cv-link {
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .cv-link a {
             text-decoration: none;
@@ -93,39 +96,41 @@
     </style>
 </head>
 <body>
+    <!-- Header Section: Contains profile picture, name, and affiliation -->
     <header>
         <div class="profile-section">
+            <!-- Profile Picture -->
             <div class="profile-picture" style="background-image: url('https://raw.githubusercontent.com/avitabilea/avitabilea.github.io/master/IMG_5988.JPG');"></div>
+            <!-- Profile Details: Name and Affiliation below the picture -->
             <div class="profile-details">
                 <h1>Andrew Avitabile</h1>
                 <p>PhD Student in Education Policy at the University of Virginia</p>
-                <p class="description">Hi! I am a PhD student in Education Policy at the University of Virginia. My research interests are in teacher labor markets and evaluating education policies in low- and middle-income countries. Prior to starting a PhD, I worked at the Indeed Hiring Lab, J-PAL, Mais Caminhos, MDRC, and NERA Economic Consulting.</p>
-                <div class="cv-link">
-                    <a href="https://yourwebsite.com/CV.pdf" target="_blank">View My CV</a>
+                <!-- Description and CV link to the right of the picture -->
+                <div class="description">
+                    <p>Hi! I am a PhD student in Education Policy at the University of Virginia. My research interests are in teacher labor markets and evaluating education policies in low- and middle-income countries. Prior to starting a PhD, I worked at the Indeed Hiring Lab, J-PAL, Mais Caminhos, MDRC, and NERA Economic Consulting.</p>
+                    <div class="cv-link">
+                        <a href="https://yourwebsite.com/CV.pdf" target="_blank">View My CV</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <!-- Navigation Bar -->
     <nav>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-    <section id="home" class="content">
-        <h2>Welcome</h2>
-        <p>Welcome to my personal website. Here you will find information about my projects and skills.</p>
-    </section>
-    <section id="about" class="content">
-        <h2>About Me</h2>
-        <p>Here's a bit about me...</p>
-    </section>
+    <!-- Projects Section -->
     <section id="projects" class="content">
         <h2>Projects</h2>
         <p>Here are some of my projects...</p>
     </section>
+    <!-- Contact Section -->
     <section id="contact" class="content">
         <h2>Contact</h2>
         <p>Get in touch with me at yaj3ma@virginia.edu</p>
     </section>
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Andrew Avitabile. All rights reserved.</p>
     </footer>
