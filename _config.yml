@@ -1,5 +1,5 @@
 # Site settings
-title: My GitHub Pages Site
+title: Andrew's website
 description: This is my site description.
 
 # Theme settings
@@ -11,5 +11,5 @@ plugins:
   - jekyll-seo-tag
 
 # Site settings
-author: Your Name
-email: you@example.com
+author: Andrew Avitabile
+email: yaj3ma@virginia.edu
