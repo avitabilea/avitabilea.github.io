@@ -48,7 +48,7 @@
             flex-direction: row;
             justify-content: space-around;
             padding: 40px 20px;
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -143,6 +143,15 @@
                 font-weight: 400;
             }
 
+        .publication-title {
+            color: inherit;
+            text-decoration: none;
+        }
+
+            .publication-title:hover {
+                text-decoration: underline;
+            }
+
         .abstract-button {
             border: 1px solid #333;
             background-color: white;
@@ -174,15 +183,6 @@
             font-size: 1rem;
             line-height: 1.6;
         }
-
-        .publication-title {
-            color: inherit;
-            text-decoration: none;
-        }
-
-            .publication-title:hover {
-                text-decoration: underline;
-            }
 
         footer {
             text-align: center;
@@ -224,26 +224,26 @@
                 .contact-item a:hover {
                     color: #00b8d4; /* Hover color */
                 }
-
-        .cv-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .cv-embed {
-            width: 100%;
-            height: 800px;
-            border: none;
-        }
     </style>
 </head>
 <body>
 
+    <script>function toggleAbstract(button) {
+            const abstract = button.nextElementSibling;
+            if (abstract.style.display === 'block') {
+                abstract.style.display = 'none';
+                button.textContent = 'Abstract';
+            } else {
+                abstract.style.display = 'block';
+                button.textContent = 'Hide Abstract';
+            }
+        }</script>
+
+
     <!-- Top Navigation Bar -->
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
+        <a href="CV.html">CV</a>
         <a href="#publications">Publications</a>
         <a href="#works_in_prog">Works in Progress</a>
         <a href="#contact">Contact</a>
