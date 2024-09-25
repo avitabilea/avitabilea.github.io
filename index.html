@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Avitabile</title>
+    <title>🧑🏻‍🏫 Andrew Avitabile</title>
     <!-- Add Font Awesome and Academicons for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+      </head>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px; /* Adjust based on your preference */
             background-color: #fff;
             color: #333;
             line-height: 1.6;
         }
 
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 600; /* Use a bolder weight for headings */
+        }
+
         /* Top Navigation Bar */
         .navbar {
-            background-color: #042e3d; /* Dark blue from Aditi's website */
+            background-color: #042e3d; 
             color: white;
             padding: 15px;
             position: sticky;
@@ -48,7 +59,7 @@
             flex-direction: row;
             justify-content: space-around;
             padding: 40px 20px;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -107,12 +118,16 @@
         }
 
         .bio {
-            font-size: 1.2rem;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px; /* Adjust size to be readable */
+            line-height: 1.6; /* Add line height for better readability */
             font-weight: 300;
             text-align: justify;
-            color: #000;
+            color: #333;
+            background-color: #fff;
+            font-weight: 500;
         }
-
+        
         /* Publications Section */
         section {
             padding: 60px 20px;
@@ -120,12 +135,12 @@
             margin: 0 auto;
         }
 
-            section h2 {
-                font-size: 2.5rem;
-                font-weight: 700;
-                text-align: center;
-                margin-bottom: 40px;
-            }
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
         .publication {
             margin-bottom: 50px;
@@ -225,8 +240,83 @@
                     color: #00b8d4; /* Hover color */
                 }
 
+
+        .sections-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .section {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section li {
+            margin-bottom: 10px;
+        }
+
+        .degree {
+            font-weight: bold;
+            display: block;
+        }
+
+        .institution {
+            font-style: italic;
+        }
+
+        .interests, .education {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%;  /* Make both sections take up half the width */
+        margin-right: 2%; /* Add some space between the sections */
+        margin-top: 0px; /* Reduce space above the bullets */
+        }
+
+        /* Styling for the Interests section */
+        .interest-list {
+        list-style-type: disc; /* Regular bullet points */
+        padding-left: 20px; /* Adjust if needed */
+        }
+
+        .interest-list li {
+        margin-bottom: 5px;
+        }
+
+        /* Styling for the Education section */
+        .education-list {
+        list-style-type: none;
+        padding-left: 0;
+        }
+
+        .education-list li {
+        display: flex;
+        align-items: center; /* Vertically centers the icon and text */
+        margin-bottom: 15px;
+        }
+
+        .education-list i {
+        font-size: 18px;
+        margin-right: 10px; /* Space between the icon and text */
+        color: #000;  /* Adjust color as needed */
+        }
+
+        .degree-info {
+        line-height: 1.5; /* Adjust to make degree and institution vertically aligned */
+        }
     </style>
 </head>
+
 <body>
 
     <script>
@@ -269,12 +359,50 @@
         <!-- Bio Section on the Right -->
         <div class="right-section">
             <div class="bio">
-                I am a third-year PhD student in Education Policy at the School of Education and Human Development at the University of Virginia and an Institute for Education Sciences (IES) Pre-doctoral Fellow. I am currently building a research agenda on K–12 education policy and leadership, teacher labor markets, and evaluating education programs in low- and middle-income countries.
+                I am a third-year PhD student in Education Policy at the School of Education and Human Development at the University of Virginia and an Institute for Education Sciences (IES) Pre-doctoral Fellow. I am currently building a research agenda around K–12 education policy and leadership, teacher labor markets, and evaluating education programs in low- and middle-income countries.
                 <br><br>
                 Before starting the PhD, I worked at the Indeed Hiring Lab, where I wrote articles on trends in the US labor market. I also have work experience helping create better measures of learning at the Abdul Latif Jameel Poverty Action Lab (J-PAL), teaching English at a non-profit in Brazil, helping evaluate social policies at MDRC, and consulting on high-profile merger and litigation cases at NERA Economic Consulting.
                 <br><br>
                 You can find my CV <a href="CV.html">here</a>.
             </div>
+        
+
+            <div class="sections-container">
+                <div class="interest">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>K–12 Education Policy</li>
+                        <li>Teacher Labor Markets</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul class="education-list">
+                        <li>
+                          <i class="fas fa-graduation-cap"></i>
+                          <div class="degree-info">
+                            PhD in Education Policy, In Progress <br>
+                            University of Virginia
+                          </div>
+                        </li>
+                        <li>
+                          <i class="fas fa-graduation-cap"></i>
+                          <div class="degree-info">
+                            Master of Public Policy, 2024 <br>
+                            University of Virginia
+                          </div>
+                        </li>
+                        <li>
+                          <i class="fas fa-graduation-cap"></i>
+                          <div class="degree-info">
+                            BS in Economics, 2015 <br>
+                            University of Virginia
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 
