@@ -97,6 +97,40 @@
             text-decoration: underline;
         }
 
+        /* Mobile hamburger menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: #000080;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-nav {
+            display: none;
+            background-color: #e0e0e0;
+            border-bottom: 2px solid #cccccc;
+            padding: 0;
+        }
+
+        .mobile-nav a {
+            display: block;
+            color: #000080;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Verdana, Arial, sans-serif;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .mobile-nav a:hover {
+            color: #ff0000;
+            background-color: #f0f0f0;
+        }
+
         .content-wrapper {
             max-width: 1000px;
             margin: 0 auto;
@@ -176,15 +210,24 @@
         }
 
         /* Mobile styles */
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            /* Hide desktop nav and show mobile nav */
+            .navbar {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .mobile-nav.show {
+                display: block;
+            }
+
             .content-wrapper {
                 padding: 10px;
                 max-width: 100%;
-            }
-
-            .navbar a {
-                margin: 0 8px;
-                font-size: 14px;
             }
 
             .header h1 {
@@ -198,6 +241,22 @@
             .cv-download-button {
                 padding: 8px 15px;
                 font-size: 12px;
+            }
+        }
+
+        /* Extra small mobile devices */
+        @media (max-width: 480px) {
+            .content-wrapper {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .mobile-nav a {
+                font-size: 13px;
+                padding: 10px 15px;
             }
         }
 
@@ -222,14 +281,49 @@
 </head>
 
 <body>
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobile-nav');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (mobileNav.classList.contains('show')) {
+                mobileNav.classList.remove('show');
+                menuBtn.innerHTML = '☰ Menu';
+            } else {
+                mobileNav.classList.add('show');
+                menuBtn.innerHTML = '✕ Close';
+            }
+        }
+
+        // Close mobile menu when clicking on a link
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileLinks = document.querySelectorAll('.mobile-nav a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', toggleMobileMenu);
+            });
+        });
+    </script>
+
     <!-- Classic header -->
     <div class="header">
         <h1>Andrew Avitabile</h1>
         <p>PhD Student, University of Virginia</p>
     </div>
 
-    <!-- Classic navigation -->
+    <!-- Desktop navigation -->
     <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="CV.html">Curriculum Vitae</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#working-papers">Working Papers</a>
+        <a href="index.html#works_in_prog">Works in Progress</a>
+    </div>
+
+    <!-- Mobile navigation -->
+    <div class="header">
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰ Menu</button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
         <a href="index.html">Home</a>
         <a href="CV.html">Curriculum Vitae</a>
         <a href="index.html#publications">Publications</a>
