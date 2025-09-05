@@ -364,6 +364,16 @@
                 color: #000080;
             }
 
+            .button-row {
+                margin-top: 8px;
+            }
+
+            .button-row .abstract-button {
+                display: inline-block;
+                margin-right: 8px; /* space between buttons */
+            }
+
+
             /* Mobile styles */
             @media (max-width: 768px) {
                 /* Hide desktop nav and show mobile nav */
@@ -527,7 +537,11 @@
 
     <script>
         function toggleAbstract(button) {
-            const abstract = button.nextElementSibling;
+            // Find the parent work-item or publication-item
+            const parentItem = button.closest('.work-item, .publication-item');
+            // Find the abstract within that parent
+            const abstract = parentItem.querySelector('.publication-abstract');
+            
             if (abstract.style.display === 'block') {
                 abstract.style.display = 'none';
                 button.textContent = '[Show Abstract]';
@@ -698,11 +712,19 @@
                         <h4><a href="https://edworkingpapers.com/ai25-1203">"Using Large Language Models to Analyze Preservice Teacher Feedback and Reflections During Clinical Teaching"</a></h4>
                         <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
                         <p><span class="journal">Annenberg Institute EdWorkingPaper No. 25-1203</span> (2025).</p>
-                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+
+                        <!-- Button container -->
+                        <div class="button-row">
+                            <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+                            <button class="abstract-button" onclick="window.open('https://www.openicpsr.org/openicpsr/project/218861/version/V2/view', '_blank')">Data</button>
+                            <button class="abstract-button" onclick="window.open('https://github.com/avitabilea/pst-feedback-anlaysis', '_blank')">Code</button>
+                        </div>
+
                         <div class="publication-abstract">
                             <p><strong>Abstract:</strong> Clinical teaching is vital for preservice teacher (PST) development, yet field supervisors' roles are understudied. This study analyzes over 11,000 supervisor evaluations and PST reflections from a Texas teacher preparation program using large language models to extract measures of feedback quality and content. Supervisor feedback often lacks key quality indicators: less than half of evaluations include areas for improvement or actionable next steps. Supervisors most frequently identify classroom management as needing improvement, whereas PST reflections more often focus on lesson planning. PSTs receiving classroom management feedback receive lower evaluation scores and are less likely to return to their placement schools as in-service teachers. These findings highlight an opportunity to improve supervisor feedback and better support PST growth during clinical teaching.</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="section" id="works_in_prog">
@@ -721,6 +743,10 @@
                         <h4>"Identifying Effective K-12 Teachers Using Clinical Teaching Data"</h4>
                         <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
                         <p><em>Analysis Complete</em></p>
+                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+                        <div class="publication-abstract">
+                            <p><strong>Abstract:</strong> This study investigates whether characteristics of pre-service teachers (PSTs) and their clinical teaching experiences predict their future effectiveness and retention as early career teachers. Using data from one of the largest university-based teacher education programs in Texas, the authors examine the relationship between PST attributes, clinical performance measures, and in-service outcomes. The analysis leverages administrative data, classroom observation scores, and student achievement growth to inform teacher preparation, hiring, and workforce policy in Texas.</p>
+                        </div>
                     </div>
                 </div>
 
