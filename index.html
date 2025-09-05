@@ -470,6 +470,18 @@
                 }
             }
 
+            .new-badge {
+                color: red;
+                font-weight: bold;
+                margin-left: 5px;
+                animation: flash 3s infinite;
+            }
+
+            @keyframes flash {
+                0%, 50%, 100% { opacity: 1; }
+                25%, 75% { opacity: 0; }
+            }
+
             /* Extra small mobile devices */
             @media (max-width: 480px) {
                 .content-wrapper {
@@ -673,6 +685,16 @@
                     <h2>Working Papers</h2>
                     
                     <div class="work-item">
+                        <h4><a href="https://edworkingpapers.com/ai25-1275">"Who Wants to Be a Teacher in America?"</a><span class="new-badge">- new!</span></h4>
+                        <p class="authors">Bartanen, B., <b>Avitabile, A.</b>, & Kwok, A.</p>
+                        <p><span class="journal">Annenberg Institute EdWorkingPaper No. 25-1275</span> (2025).</p>
+                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+                        <div class="publication-abstract">
+                            <p><strong>Abstract:</strong> Long-standing compositional disparities and more recent concerns about the health of the teaching profession highlight the need to increase our understanding of the pipeline into K--12 teaching. Leveraging data from 9 million college applicants across a 10-year period, we provide the most detailed description to date of who is interested in teaching in the United States. We document substantially lower interest among men, students of color, and high-achieving students. Comparing teaching to similar career paths, such as nursing or social work, we find that racial/ethnic disparities are far greater for teaching, but gender and academic achievement gaps are comparable or less severe. We also find evidence that students interested in teaching submit fewer applications, are less likely to apply to selective colleges, and tend to apply to colleges close to their home. Controlling for application behavior greatly attenuates the relationship between teaching interest and academic achievement, suggesting that ambition or a desire for prestige is a more salient predictor of who becomes a teacher than achievement. We find corroborating evidence from applicants' teacher-recommenders, who rate students interested in teaching as having less intellectual promise and self-confidence, but greater concern for others.</p>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
                         <h4><a href="https://edworkingpapers.com/ai25-1203">"Using Large Language Models to Analyze Preservice Teacher Feedback and Reflections During Clinical Teaching"</a></h4>
                         <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
                         <p><span class="journal">Annenberg Institute EdWorkingPaper No. 25-1203</span> (2025).</p>
@@ -685,17 +707,6 @@
 
                 <div class="section" id="works_in_prog">
                     <h2>Works in Progress</h2>
-                    
-                    <div class="work-item">
-                        <h4>"Who Wants to Be a Teacher in America?"</h4>
-                        <p class="authors">Bartanen, B., <b>Avitabile, A.</b>, & Kwok, A.</p>
-                        <p><em>Manuscript Available Upon Request</em></p>
-                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
-                        <div class="publication-abstract">
-                            <p><strong>Abstract:</strong> Long-standing compositional disparities and more recent concerns about the health of the teaching profession highlight the need to increase our understanding of the pipeline into K--12 teaching. Leveraging data from 9 million college applicants across a 10-year period, we provide the most detailed description to date of who is interested in teaching in the United States. We document substantially lower interest among men, students of color, and high-achieving students. Comparing teaching to similar career paths, such as nursing or social work, we find that racial/ethnic disparities are far greater for teaching, but gender and academic achievement gaps are comparable or less severe. We also find evidence that students interested in teaching submit fewer applications, are less likely to apply to selective colleges, and tend to apply to colleges close to their home. Controlling for application behavior greatly attenuates the relationship between teaching interest and academic achievement, suggesting that ambition or a desire for prestige is a more salient predictor of who becomes a teacher than achievement. We find corroborating evidence from applicants' teacher-recommenders, who rate students interested in teaching as having less intellectual promise and self-confidence, but greater concern for others.</p>
-                        </div>
-                    </div>
-
                     <div class="work-item">
                         <h4>"Evaluating the Impact of a Comprehensive School Health Program in Zambia"</h4>
                         <p class="authors">Lagarde, M., Imbiti, I., Grabowska, M., <b>Avitabile, A.</b>, & Beimba, G.</p>
