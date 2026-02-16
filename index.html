@@ -366,11 +366,38 @@
 
             .button-row {
                 margin-top: 8px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 6px;
             }
 
             .button-row .abstract-button {
                 display: inline-block;
-                margin-right: 8px; /* space between buttons */
+            }
+
+            .media-label {
+                font-size: 11px;
+                color: #666666;
+                font-style: italic;
+                margin-left: 6px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .media-button {
+                border: 1px solid #808080;
+                background-color: #f0f0e8;
+                color: #333333;
+                padding: 3px 8px;
+                font-size: 11px;
+                font-family: 'Times New Roman', Times, serif;
+                cursor: pointer;
+                font-style: italic;
+            }
+
+            .media-button:hover {
+                background-color: #e8e8d8;
+                color: #000000;
             }
 
 
@@ -611,9 +638,9 @@
                     <div class="section" id="home">
                         <h2>Welcome to My Academic Website</h2>
                         <div class="bio-section">
-                            <p>I am a fourth-year PhD student in Education Policy at the University of Virginia School of Education and Human Development and an Institute for Education Sciences (IES) Pre-doctoral Fellow. I am currently building a research agenda around evaluating K–12 education policy and leadership, teacher labor markets, and evaluating education programs in low- and middle-income countries.</p>
-                            
-                            <p>Before starting the PhD, I worked at the Indeed Hiring Lab, where I wrote articles on trends in the US labor market. I also have work experience helping create better measures of learning at the Abdul Latif Jameel Poverty Action Lab (J-PAL), teaching English at a non-profit in Brazil, helping evaluate social policies at MDRC, and consulting on high-profile merger and litigation cases at NERA Economic Consulting.</p>
+                            <p>I am a fourth-year PhD student in Education Policy at the University of Virginia School of Education and Human Development and an Institute for Education Sciences (IES) Pre-doctoral Fellow. My research focuses on the adults in schools—especially teachers. My dissertation examines how we can use natural language processing to understand preservice teacher development, how certification exams impact teacher supply and potential strategies to mitigate those effects, and policies aimed at improving teacher retention. I use a range of methods in my work, including natural language processing, quasi-experimental methods, and randomized controlled trials.</p>
+
+                            <p>I also have a keen interest in education in low- and middle-income countries. Before starting the PhD, I taught English at a non-profit in Brazil and worked on randomized controlled trials at the Abdul Latif Jameel Poverty Action Lab (J-PAL). I also have work experience at the Indeed Hiring Lab, where I wrote about trends in the US labor market, at MDRC, where I helped evaluate social policies, and at NERA Economic Consulting.</p>
                             
                             <p>You can find my complete <a href="CV.html">CV here</a>.</p>
                         </div>
@@ -688,7 +715,11 @@
                         <h4><a href="https://doi.org/10.3102/0013189X241276814">"Why Do You Want to Be a Teacher? A Natural Language Processing Approach"</a></h4>
                         <p class="authors">Bartanen, B., Kwok, A., <b>Avitabile, A.</b>, & Kim, B.</p>
                         <p><span class="journal">Educational Researcher</span> (2024).</p>
-                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+                        <div class="button-row">
+                            <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+                            <span class="media-label">Cited in:</span>
+                            <button class="media-button" onclick="window.open('https://www.edsurge.com/news/2024-08-05-what-motivates-teachers-to-enter-the-professionl', '_blank')">EdSurge</button>
+                        </div>
                         <div class="publication-abstract">
                             <p><strong>Abstract:</strong> Heightened concerns about the health of the teaching profession highlight the importance of studying the early teacher pipeline. This exploratory, descriptive article examines preservice teachers' expressed motivation for pursuing a teaching career. Using data from a large teacher education program in Texas, we use a natural language processing algorithm to categorize into topical groups roughly 2,800 essay responses to the prompt, "Explain why you decided to become a teacher." We identify 10 topics that largely reflect altruistic and intrinsic (although not extrinsic) reasons for teaching. The frequency of topics varied substantially by preservice teacher gender, race/ethnicity, and certification area. Intrinsic enjoyment of teaching and experiences with adversity predicted higher clinical teaching performance and lower attrition as a full-time teacher.</p>
                         </div>
@@ -699,10 +730,14 @@
                     <h2>Working Papers</h2>
                     
                     <div class="work-item">
-                        <h4><a href="https://edworkingpapers.com/ai25-1275">"Who Wants to Be a Teacher in America?"</a><span class="new-badge">- new!</span></h4>
+                        <h4><a href="https://edworkingpapers.com/ai25-1275">"Who Wants to Be a Teacher in America?"</a></h4>
                         <p class="authors">Bartanen, B., <b>Avitabile, A.</b>, & Kwok, A.</p>
-                        <p><span class="journal">Annenberg Institute EdWorkingPaper No. 25-1275</span> (2025).</p>
-                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+                        <p><span class="journal">Revise and Resubmit, American Educational Research Journal</span>.</p>
+                        <div class="button-row">
+                            <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
+                            <span class="media-label">Cited in:</span>
+                            <button class="media-button" onclick="window.open('https://www.the74million.org/article/12-charts-that-defined-education-in-2025/', '_blank')">The 74</button>
+                        </div>
                         <div class="publication-abstract">
                             <p><strong>Abstract:</strong> Long-standing compositional disparities and more recent concerns about the health of the teaching profession highlight the need to increase our understanding of the pipeline into K--12 teaching. Leveraging data from 9 million college applicants across a 10-year period, we provide the most detailed description to date of who is interested in teaching in the United States. We document substantially lower interest among men, students of color, and high-achieving students. Comparing teaching to similar career paths, such as nursing or social work, we find that racial/ethnic disparities are far greater for teaching, but gender and academic achievement gaps are comparable or less severe. We also find evidence that students interested in teaching submit fewer applications, are less likely to apply to selective colleges, and tend to apply to colleges close to their home. Controlling for application behavior greatly attenuates the relationship between teaching interest and academic achievement, suggesting that ambition or a desire for prestige is a more salient predictor of who becomes a teacher than achievement. We find corroborating evidence from applicants' teacher-recommenders, who rate students interested in teaching as having less intellectual promise and self-confidence, but greater concern for others.</p>
                         </div>
@@ -711,7 +746,7 @@
                     <div class="work-item">
                         <h4><a href="https://edworkingpapers.com/ai25-1203">"Using Large Language Models to Analyze Preservice Teacher Feedback and Reflections During Clinical Teaching"</a></h4>
                         <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
-                        <p><span class="journal">Annenberg Institute EdWorkingPaper No. 25-1203</span> (2025).</p>
+                        <p><span class="journal">Revise and Resubmit, Journal of Teacher Education</span>.</p>
 
                         <!-- Button container -->
                         <div class="button-row">
@@ -751,7 +786,7 @@
                 </div>
 
                 <div class="last-updated">
-                    <em>Last updated: September 2025</em>
+                    <em>Last updated: February 2026</em>
                 </div>
             </div>
         </div>
