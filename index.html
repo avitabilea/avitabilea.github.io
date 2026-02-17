@@ -5,13 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Andrew Avitabile - PhD Student, University of Virginia</title>
         <meta name="description" content="Andrew Avitabile is a fourth-year PhD student in Education Policy at the University of Virginia, focusing on evaluating K-12 education policy, teacher labor markets, and education programs in low- and middle-income countries. IES Pre-doctoral Fellow with research experience in labor market trends, educational policy, and social impact evaluation.">
-        <!-- Add custom emoji favicon -->
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑🏻‍🏫</text></svg>">
-        <!-- Classic academic fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&family=Verdana:wght@400;700&family=Georgia:wght@400;700&display=swap" rel="stylesheet">
-        
+
         <!-- Open Graph meta tags -->
         <meta property="og:title" content="Andrew Avitabile - PhD Student, University of Virginia">
         <meta property="og:description" content="Academic Research Website">
@@ -27,18 +22,41 @@
         <style>
             body {
                 margin: 0;
-                padding: 0;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 14px;
+                padding: 20px;
+                font-family: 'Courier New', courier, monospace;
+                font-size: 16px;
                 background-color: #ffffff;
-                color: #000000;
-                line-height: 1.4;
+                color: #111111;
+                line-height: 1.6;
             }
-    
-            h1, h2, h3, h4, h5, h6 {
-                font-family: 'Times New Roman', Times, serif;
+
+            .page {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-family: 'Courier New', courier, monospace;
+                font-size: 28px;
                 font-weight: bold;
-                color: #000080;
+                margin: 0 0 2px 0;
+                color: #000000;
+            }
+
+            h2 {
+                font-family: 'Courier New', courier, monospace;
+                font-size: 18px;
+                font-weight: bold;
+                color: #000000;
+                margin: 0 0 12px 0;
+            }
+
+            h3 {
+                font-family: 'Courier New', courier, monospace;
+                font-size: 15px;
+                font-weight: bold;
+                color: #000000;
+                margin: 0 0 4px 0;
             }
 
             a {
@@ -52,767 +70,325 @@
 
             a:hover {
                 color: #ff0000;
-                text-decoration: none;
+            }
+
+            hr {
+                border: none;
+                border-top: 1px solid #cccccc;
+                margin: 20px 0;
             }
 
             .header {
-                background-color: #f0f0f0;
-                border-bottom: 3px solid #000080;
-                padding: 10px 0;
-                text-align: center;
+                text-align: left;
+                margin-bottom: 16px;
             }
 
-            .header h1 {
+            .subtitle {
+                font-size: 16px;
+                color: #444444;
                 margin: 0;
-                font-size: 28px;
-                color: #000080;
-                font-weight: bold;
             }
 
-            .header p {
-                margin: 5px 0 0 0;
-                font-size: 16px;
-                color: #666666;
-                font-style: italic;
+            .top-section {
+                display: flex;
+                gap: 24px;
+                align-items: flex-start;
+                margin-bottom: 4px;
             }
 
-            .navbar {
-                background-color: #e0e0e0;
-                border-bottom: 2px solid #cccccc;
-                padding: 8px 0;
-                text-align: center;
+            .profile-pic {
+                width: 170px;
+                height: 170px;
+                border: 1px solid #999999;
+                background-size: cover;
+                background-position: center 20%;
+                flex-shrink: 0;
             }
-    
-            .navbar a {
-                color: #000080;
-                margin: 0 15px;
-                text-decoration: none;
+
+            .top-info {
+                flex: 1;
+            }
+
+            .contact-line {
+                margin: 8px 0;
                 font-size: 16px;
-                font-weight: bold;
-                font-family: 'Times New Roman', Times, serif;
             }
-    
-            .navbar a:hover {
-                color: #ff0000;
+
+            .contact-line a {
+                margin-right: 6px;
+            }
+
+            .nav-links {
+                margin: 10px 0;
+                font-size: 16px;
+            }
+
+            .nav-links a {
                 text-decoration: underline;
             }
 
-            /* Mobile hamburger menu */
-            .mobile-menu-btn {
-                display: none;
-                background: none;
-                border: none;
-                font-size: 18px;
-                color: #000080;
-                cursor: pointer;
-                padding: 8px;
-                font-family: 'Times New Roman', Times, serif;
+            .nav-sep {
+                color: #999999;
+                margin: 0 6px;
             }
 
-            .mobile-nav {
-                display: none;
-                background-color: #e0e0e0;
-                border-bottom: 2px solid #cccccc;
-                padding: 0;
-            }
-
-            .mobile-nav a {
-                display: block;
-                color: #000080;
-                padding: 12px 20px;
-                text-decoration: none;
-                font-size: 14px;
-                font-weight: bold;
-                font-family: 'Times New Roman', Times, serif;
-                border-bottom: 1px solid #cccccc;
-            }
-
-            .mobile-nav a:hover {
-                color: #ff0000;
-                background-color: #f0f0f0;
-            }
-
-            .content-wrapper {
-                max-width: 1000px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: #ffffff;
-            }
-    
-            .main-content {
-                display: table;
-                width: 100%;
-                border-spacing: 20px;
-            }
-    
-            .left-column {
-                display: table-cell;
-                width: 200px;
-                vertical-align: top;
-                text-align: center;
-            }
-    
-            .profile-picture {
-                width: 200px;
-                height: 200px;
-                border: 2px solid #000080;
-                background-color: #f0f0f0;
-                background-size: cover;
-                background-position: center 20%;
-                margin-bottom: 15px;
-            }
-    
-            .contact-box {
-                border: 2px solid #000080;
-                background-color: #f8f8f8;
-                padding: 10px;
-                margin-bottom: 15px;
-                text-align: left;
-            }
-
-            .contact-box h3 {
-                margin: 0 0 10px 0;
-                font-size: 14px;
-                color: #000080;
-                text-align: center;
-                border-bottom: 1px solid #000080;
-                padding-bottom: 5px;
-            }
-
-            .contact-box p {
-                margin: 5px 0;
-                font-size: 14px;
-                line-height: 1.3;
-            }
-
-            .contact-box a {
-                font-size: 14px;
-            }
-    
-            .right-column {
-                display: table-cell;
-                vertical-align: top;
-                padding-left: 20px;
+            .bio p {
+                margin: 0 0 12px 0;
             }
 
             .section {
-                margin-bottom: 25px;
+                margin-bottom: 24px;
             }
 
-            .section h2 {
-                font-size: 18px;
-                color: #000080;
-                border-bottom: 2px solid #000080;
-                padding-bottom: 3px;
-                margin-bottom: 15px;
-            }
-
-            .section h3 {
-                font-size: 16px;
-                color: #000080;
-                margin: 15px 0 8px 0;
-            }
-
-            .section p {
-                text-align: justify;
-                margin-bottom: 14px;
-            }
-    
-            .bio-section {
-                background-color: #f9f9f9;
-                border: 1px solid #cccccc;
-                padding: 15px;
+            .paper {
                 margin-bottom: 20px;
             }
 
-            .interests-education {
-                margin-top: 20px;
-            }
-
-            .interests-col, .education-col {
-                border: 2px solid #000080;
-                background-color: #f8f8f8;
-                padding: 10px;
-                margin-bottom: 15px;
-                text-align: left;
-            }
-
-            .interests-col h3, .education-col h3 {
-                margin: 0 0 10px 0;
-                font-size: 14px;
-                color: #000080;
-                text-align: center;
-                border-bottom: 1px solid #000080;
-                padding-bottom: 5px;
-            }
-
-            .interests-col ul, .education-col ul {
-                margin: 0;
-                padding-left: 20px;
-                font-size: 14px;
-            }
-
-            .interests-col li, .education-col li {
-                margin-bottom: 5px;
-            }
-
-            .education-col ul {
-                list-style-type: none;
-                padding-left: 0;
-            }
-
-            .education-col li {
-                margin-bottom: 8px;
-                font-size: 14px;
-            }
-
-            .degree {
+            .paper-title {
                 font-weight: bold;
+                line-height: 1.4;
             }
-    
-            .publication-item, .work-item {
-                margin-bottom: 20px;
-                padding: 14px;
-                border: 1px solid #cccccc;
-                background-color: #f9f9f9;
-            }
-    
-            .publication-item h4, .work-item h4 {
-                font-size: 14px;
-                margin: 0 0 8px 0;
-                color: #000080;
-                line-height: 1.3;
-            }
-    
-            .publication-item p, .work-item p {
-                margin: 5px 0;
-                font-size: 14px;
-                color: #333333;
+
+            .paper-title a {
+                color: #0000ff;
             }
 
             .authors {
+                color: #444444;
                 font-style: italic;
-                color: #666666;
+                margin: 2px 0;
             }
 
             .journal {
-                font-weight: bold;
-                color: #000080;
-            }
-    
-            .abstract-button {
-                border: 1px solid #000080;
-                background-color: #ffffff;
-                color: #000080;
-                padding: 3px 8px;
-                font-size: 11px;
-                font-family: 'Times New Roman', Times, serif;
-                cursor: pointer;
-                margin-top: 8px;
-            }
-    
-            .abstract-button:hover {
-                background-color: #e0e0ff;
-            }
-    
-            .publication-abstract {
-                display: none;
-                margin-top: 10px;
-                font-size: 14px;
-                line-height: 1.4;
-                border: 1px solid #cccccc;
-                background-color: #ffffff;
-                padding: 10px;
-                text-align: justify;
+                margin: 2px 0;
             }
 
-            .footer {
-                text-align: center;
-                padding: 15px;
-                background-color: #f0f0f0;
-                border-top: 2px solid #cccccc;
-                font-size: 11px;
-                color: #666666;
-                margin-top: 30px;
+            .journal-name {
+                font-weight: bold;
+            }
+
+            .paper-links {
+                margin: 4px 0;
+            }
+
+            .paper-links a, .paper-links span.toggle-link {
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .toggle-link {
+                color: #0000ff;
+                text-decoration: underline;
+                cursor: pointer;
+                font-family: 'Courier New', courier, monospace;
+                background: none;
+                border: none;
+                padding: 0;
+            }
+
+            .toggle-link:hover {
+                color: #ff0000;
+            }
+
+            .media-line {
+                color: #444444;
+                margin: 2px 0;
+            }
+
+            .abstract {
+                display: none;
+                margin: 8px 0 0 20px;
+                line-height: 1.5;
+                color: #222222;
+            }
+
+            .status {
+                color: #444444;
+                font-style: italic;
+                margin: 2px 0;
             }
 
             .last-updated {
-                text-align: right;
-                font-size: 10px;
+                font-size: 13px;
                 color: #999999;
-                margin-top: 20px;
-                font-style: italic;
+                margin-top: 30px;
             }
 
-            /* Classic academic table style */
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                margin: 10px 0;
-            }
-
-            th, td {
-                border: 1px solid #cccccc;
-                padding: 5px;
-                text-align: left;
-                font-size: 14px;
-            }
-
-            th {
-                background-color: #e0e0e0;
-                font-weight: bold;
-                color: #000080;
-            }
-
-            .button-row {
-                margin-top: 8px;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 6px;
-            }
-
-            .button-row .abstract-button {
-                display: inline-block;
-            }
-
-            .media-label {
-                font-size: 11px;
-                color: #666666;
-                font-style: italic;
-                margin-left: 6px;
-                font-family: 'Times New Roman', Times, serif;
-            }
-
-            .media-button {
-                border: 1px solid #808080;
-                background-color: #f0f0e8;
-                color: #333333;
-                padding: 3px 8px;
-                font-size: 11px;
-                font-family: 'Times New Roman', Times, serif;
-                cursor: pointer;
-                font-style: italic;
-            }
-
-            .media-button:hover {
-                background-color: #e8e8d8;
-                color: #000000;
-            }
-
-
-            /* Mobile styles */
-            @media (max-width: 768px) {
-                /* Hide desktop nav and show mobile nav */
-                .navbar {
-                    display: none;
-                }
-
-                .mobile-menu-btn {
-                    display: block;
-                    margin: 0 auto;
-                }
-
-                .mobile-nav.show {
-                    display: block;
-                }
-
-                .content-wrapper {
+            @media (max-width: 600px) {
+                body {
                     padding: 15px;
-                    max-width: 100%;
-                }
-
-                .main-content {
-                    display: block;
-                }
-
-                .left-column, .right-column {
-                    display: block;
-                    width: 100%;
-                    padding: 0;
-                }
-
-                .left-column {
-                    margin-bottom: 20px;
-                }
-
-                .profile-picture {
-                    width: 150px;
-                    height: 150px;
-                    margin: 0 auto 15px auto;
-                }
-
-                /* Mobile bio positioning - place after profile picture */
-                .mobile-bio {
-                    order: 1;
-                    margin-bottom: 20px;
-                }
-
-                .mobile-contact {
-                    order: 2;
-                }
-
-                .mobile-interests-education {
-                    order: 3;
-                }
-
-                .left-column {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                /* Fix width issues for mobile boxes */
-                .contact-box, 
-                .interests-col, 
-                .education-col, 
-                .bio-section,
-                .publication-item,
-                .work-item {
-                    width: 100%;
-                    box-sizing: border-box;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-
-                .interests-education {
-                    margin-top: 0;
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .interests-col, .education-col {
-                    width: 100%;
-                    margin-bottom: 15px;
-                }
-
-                .header h1 {
-                    font-size: 22px;
-                }
-
-                .header p {
                     font-size: 14px;
                 }
 
-                /* Improve mobile readability */
-                .section h2 {
-                    font-size: 16px;
+                h1 {
+                    font-size: 22px;
                 }
 
-                .section p {
-                    text-align: left;
+                .top-section {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
                 }
 
-                .publication-abstract {
-                    text-align: left;
-                }
-            }
-
-            .new-badge {
-                color: red;
-                font-weight: bold;
-                margin-left: 5px;
-                animation: flash 3s infinite;
-            }
-
-            @keyframes flash {
-                0%, 50%, 100% { opacity: 1; }
-                25%, 75% { opacity: 0; }
-            }
-
-            /* Extra small mobile devices */
-            @media (max-width: 480px) {
-                .content-wrapper {
-                    padding: 10px;
+                .profile-pic {
+                    width: 140px;
+                    height: 140px;
                 }
 
-                .header h1 {
-                    font-size: 20px;
+                .top-info {
+                    text-align: center;
                 }
 
-                .profile-picture {
-                    width: 120px;
-                    height: 120px;
+                .nav-links {
+                    text-align: center;
                 }
 
-                .mobile-nav a {
-                    font-size: 13px;
-                    padding: 10px 15px;
+                .contact-line {
+                    text-align: center;
                 }
-            }
-
-            /* Classic scrollbar styling for webkit browsers */
-            ::-webkit-scrollbar {
-                width: 16px;
-            }
-
-            ::-webkit-scrollbar-track {
-                background: #f0f0f0;
-            }
-
-            ::-webkit-scrollbar-thumb {
-                background: #c0c0c0;
-                border: 1px solid #808080;
-            }
-
-            ::-webkit-scrollbar-thumb:hover {
-                background: #a0a0a0;
             }
         </style>
     </head>
 
 <body>
-
     <script>
-        function toggleAbstract(button) {
-            // Find the parent work-item or publication-item
-            const parentItem = button.closest('.work-item, .publication-item');
-            // Find the abstract within that parent
-            const abstract = parentItem.querySelector('.publication-abstract');
-            
+        function toggleAbstract(link) {
+            var paper = link.closest('.paper');
+            var abstract = paper.querySelector('.abstract');
+
             if (abstract.style.display === 'block') {
                 abstract.style.display = 'none';
-                button.textContent = '[Show Abstract]';
+                link.textContent = '[Abstract]';
             } else {
                 abstract.style.display = 'block';
-                button.textContent = '[Hide Abstract]';
+                link.textContent = '[Hide Abstract]';
             }
         }
-
-        function toggleMobileMenu() {
-            const mobileNav = document.getElementById('mobile-nav');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (mobileNav.classList.contains('show')) {
-                mobileNav.classList.remove('show');
-                menuBtn.innerHTML = '☰ Menu';
-            } else {
-                mobileNav.classList.add('show');
-                menuBtn.innerHTML = '✕ Close';
-            }
-        }
-
-        // Close mobile menu when clicking on a link
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileLinks = document.querySelectorAll('.mobile-nav a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', toggleMobileMenu);
-            });
-        });
     </script>
 
-    <!-- Classic header -->
-    <div class="header">
-        <h1>Andrew Avitabile</h1>
-        <p>PhD Student, University of Virginia</p>
-    </div>
-
-    <!-- Desktop navigation -->
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="CV.html">Curriculum Vitae</a>
-        <a href="#publications">Publications</a>
-        <a href="#working-papers">Working Papers</a>
-        <a href="#works_in_prog">Works in Progress</a>
-    </div>
-
-    <!-- Mobile navigation -->
-    <div class="header">
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰ Menu</button>
-    </div>
-    <div class="mobile-nav" id="mobile-nav">
-        <a href="#home">Home</a>
-        <a href="CV.html">Curriculum Vitae</a>
-        <a href="#publications">Publications</a>
-        <a href="#working-papers">Working Papers</a>
-        <a href="#works_in_prog">Works in Progress</a>
-    </div>
-
-    <div class="content-wrapper">
-        <div class="main-content">
-            <!-- Left sidebar -->
-            <div class="left-column">
-                <div class="profile-picture" style="background-image: url('https://raw.githubusercontent.com/avitabilea/avitabilea.github.io/master/IMG_5988.JPG');"></div>
-                
-                <!-- Bio section for mobile (will be repositioned) -->
-                <div class="mobile-bio">
-                    <div class="section" id="home">
-                        <h2>Welcome to My Academic Website</h2>
-                        <div class="bio-section">
-                            <p>I am a fourth-year PhD student in Education Policy at the University of Virginia School of Education and Human Development and an Institute for Education Sciences (IES) Pre-doctoral Fellow. My research focuses on the adults in schools—especially teachers. My dissertation examines how we can use natural language processing to understand preservice teacher development, how certification exams impact teacher supply and potential strategies to mitigate those effects, and policies aimed at improving teacher retention. I use a range of methods in my work, including natural language processing, quasi-experimental methods, and randomized controlled trials.</p>
-
-                            <p>I also have a keen interest in education in low- and middle-income countries. Before starting the PhD, I taught English at a non-profit in Brazil and worked on randomized controlled trials at the Abdul Latif Jameel Poverty Action Lab (J-PAL). I also have work experience at the Indeed Hiring Lab, where I wrote about trends in the US labor market, at MDRC, where I helped evaluate social policies, and at NERA Economic Consulting.</p>
-                            
-                            <p>You can find my complete <a href="CV.html">CV here</a>.</p>
-                        </div>
-                    </div>
+    <div class="page">
+        <div class="top-section">
+            <div class="profile-pic" style="background-image: url('https://raw.githubusercontent.com/avitabilea/avitabilea.github.io/master/IMG_5988.JPG');"></div>
+            <div class="top-info">
+                <div class="header">
+                    <h1>Andrew Avitabile</h1>
+                    <p class="subtitle">PhD Student, University of Virginia</p>
                 </div>
-
-                <div class="mobile-contact">
-                    <div class="contact-box">
-                        <h3>Contact Information</h3>
-                        <p><strong>Email:</strong><br>
-                        <a href="mailto:yaj3ma@virginia.edu">yaj3ma@virginia.edu</a></p>
-                        
-                        <p><strong>Office:</strong><br>
-                        271 Ridley Hall
-                        <br>
-                        405 Emmet St S, 
-                        <br>
-                        Charlottesville, VA 22904</p>
-                        
-                        <p><strong>Links:</strong><br>
-                        <a href="https://scholar.google.com/citations?user=GUPuEdwAAAAJ&hl=en" target="_blank">Google Scholar</a><br>
-                        <a href="https://www.linkedin.com/in/andrew-avitabile/" target="_blank">LinkedIn</a><br>
-                        <a href="https://bsky.app/profile/andrewavit.bsky.social" target="_blank">Bluesky</a></p>
-                    </div>
-                </div>
-
-                <div class="mobile-interests-education">
-                    <div class="interests-education">
-                        <div class="interests-col">
-                            <h3>Research Interests</h3>
-                            <ul>
-                                <li>Teacher Labor Markets</li>
-                                <li>K–12 Education Policy</li>
-                                <li>Education Policy in Low- and Middle-Income Countries</li>
-                            </ul>
-                        </div>
-                        <div class="education-col">
-                            <h3>Education</h3>
-                            <ul>
-                                <li><span class="degree">PhD in Education Policy</span><br>
-                                University of Virginia<br>
-                                <em>In Progress</em></li>
-                                <li><span class="degree">Master of Public Policy</span><br>
-                                University of Virginia<br>
-                                <em>2024</em></li>
-                                <li><span class="degree">BS in Economics</span><br>
-                                George Washington University<br>
-                                <em>2015</em></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Main content area -->
-            <div class="right-column">
-                <!-- Desktop bio section -->
-                <div class="section desktop-bio" id="home" style="display: block;">
-                    <h2>Welcome to My Academic Website</h2>
-                    <div class="bio-section">
-                        <p>I am a fourth-year PhD student in Education Policy at the University of Virginia School of Education and Human Development and an Institute for Education Sciences (IES) Pre-doctoral Fellow. I am currently building a research agenda around evaluating K–12 education policy and leadership, teacher labor markets, and evaluating education programs in low- and middle-income countries.</p>
-                        
-                        <p>Before starting the PhD, I worked at the Indeed Hiring Lab, where I wrote articles on trends in the US labor market. I also have work experience helping create better measures of learning at the Abdul Latif Jameel Poverty Action Lab (J-PAL), teaching English at a non-profit in Brazil, helping evaluate social policies at MDRC, and consulting on high-profile merger and litigation cases at NERA Economic Consulting.</p>
-                        
-                        <p>You can find my complete <a href="CV.html">CV here</a>.</p>
-                    </div>
-                </div>
-
-                <div class="section" id="publications">
-                    <h2>Publications</h2>
-                    <div class="publication-item">
-                        <h4><a href="https://doi.org/10.3102/0013189X241276814">"Why Do You Want to Be a Teacher? A Natural Language Processing Approach"</a></h4>
-                        <p class="authors">Bartanen, B., Kwok, A., <b>Avitabile, A.</b>, & Kim, B.</p>
-                        <p><span class="journal">Educational Researcher</span> (2024).</p>
-                        <div class="button-row">
-                            <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
-                            <span class="media-label">Cited in:</span>
-                            <button class="media-button" onclick="window.open('https://www.edsurge.com/news/2024-08-05-what-motivates-teachers-to-enter-the-professionl', '_blank')">EdSurge</button>
-                        </div>
-                        <div class="publication-abstract">
-                            <p><strong>Abstract:</strong> Heightened concerns about the health of the teaching profession highlight the importance of studying the early teacher pipeline. This exploratory, descriptive article examines preservice teachers' expressed motivation for pursuing a teaching career. Using data from a large teacher education program in Texas, we use a natural language processing algorithm to categorize into topical groups roughly 2,800 essay responses to the prompt, "Explain why you decided to become a teacher." We identify 10 topics that largely reflect altruistic and intrinsic (although not extrinsic) reasons for teaching. The frequency of topics varied substantially by preservice teacher gender, race/ethnicity, and certification area. Intrinsic enjoyment of teaching and experiences with adversity predicted higher clinical teaching performance and lower attrition as a full-time teacher.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section" id="working-papers">
-                    <h2>Working Papers</h2>
-                    
-                    <div class="work-item">
-                        <h4><a href="https://edworkingpapers.com/ai25-1275">"Who Wants to Be a Teacher in America?"</a></h4>
-                        <p class="authors">Bartanen, B., <b>Avitabile, A.</b>, & Kwok, A.</p>
-                        <p><span class="journal">Revise and Resubmit, American Educational Research Journal</span>.</p>
-                        <div class="button-row">
-                            <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
-                            <span class="media-label">Cited in:</span>
-                            <button class="media-button" onclick="window.open('https://www.the74million.org/article/12-charts-that-defined-education-in-2025/', '_blank')">The 74</button>
-                        </div>
-                        <div class="publication-abstract">
-                            <p><strong>Abstract:</strong> Long-standing compositional disparities and more recent concerns about the health of the teaching profession highlight the need to increase our understanding of the pipeline into K--12 teaching. Leveraging data from 9 million college applicants across a 10-year period, we provide the most detailed description to date of who is interested in teaching in the United States. We document substantially lower interest among men, students of color, and high-achieving students. Comparing teaching to similar career paths, such as nursing or social work, we find that racial/ethnic disparities are far greater for teaching, but gender and academic achievement gaps are comparable or less severe. We also find evidence that students interested in teaching submit fewer applications, are less likely to apply to selective colleges, and tend to apply to colleges close to their home. Controlling for application behavior greatly attenuates the relationship between teaching interest and academic achievement, suggesting that ambition or a desire for prestige is a more salient predictor of who becomes a teacher than achievement. We find corroborating evidence from applicants' teacher-recommenders, who rate students interested in teaching as having less intellectual promise and self-confidence, but greater concern for others.</p>
-                        </div>
-                    </div>
-
-                    <div class="work-item">
-                        <h4><a href="https://edworkingpapers.com/ai25-1203">"Using Large Language Models to Analyze Preservice Teacher Feedback and Reflections During Clinical Teaching"</a></h4>
-                        <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
-                        <p><span class="journal">Revise and Resubmit, Journal of Teacher Education</span>.</p>
-
-                        <!-- Button container -->
-                        <div class="button-row">
-                            <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
-                            <button class="abstract-button" onclick="window.open('https://www.openicpsr.org/openicpsr/project/218861/version/V2/view', '_blank')">Data</button>
-                            <button class="abstract-button" onclick="window.open('https://github.com/avitabilea/pst-feedback-anlaysis', '_blank')">Code</button>
-                        </div>
-
-                        <div class="publication-abstract">
-                            <p><strong>Abstract:</strong> Clinical teaching is vital for preservice teacher (PST) development, yet field supervisors' roles are understudied. This study analyzes over 11,000 supervisor evaluations and PST reflections from a Texas teacher preparation program using large language models to extract measures of feedback quality and content. Supervisor feedback often lacks key quality indicators: less than half of evaluations include areas for improvement or actionable next steps. Supervisors most frequently identify classroom management as needing improvement, whereas PST reflections more often focus on lesson planning. PSTs receiving classroom management feedback receive lower evaluation scores and are less likely to return to their placement schools as in-service teachers. These findings highlight an opportunity to improve supervisor feedback and better support PST growth during clinical teaching.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="section" id="works_in_prog">
-                    <h2>Works in Progress</h2>
-                    <div class="work-item">
-                        <h4>"Evaluating the Impact of a Comprehensive School Health Program in Zambia"</h4>
-                        <p class="authors">Lagarde, M., Imbiti, I., Grabowska, M., <b>Avitabile, A.</b>, & Beimba, G.</p>
-                        <p><em>Data Collection Phase</em></p>
-                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
-                        <div class="publication-abstract">
-                            <p><strong>Abstract:</strong> This study evaluates a comprehensive School Health Program (SHP) in Zambia through a cluster-randomized controlled trial involving 225 schools divided into three groups: control, full SHP, and mass drug administration only. While children under five receive significant health attention, school-age children (5-17) face high malaria morbidity with limited access to prevention and treatment, negatively impacting education through absenteeism and reduced cognitive abilities. Since 2015, the NGO Healthy Learners has partnered with Zambia's government to implement the SHP, which trains teachers as community health workers and equips schools with health rooms to provide diagnosis, treatment, and health education. Unlike limited school health programs, the SHP offers both preventive and curative care, leveraging the entire school community's resources. The research examines implementation, impact, added value, indirect effects, and long-term implications for human capital development, aiming to assess the effectiveness and cost-efficiency of this comprehensive school health model in improving health and educational outcomes.</p>
-                        </div>
-                    </div>
-
-                    <div class="work-item">
-                        <h4>"Identifying Effective K-12 Teachers Using Clinical Teaching Data"</h4>
-                        <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
-                        <p><em>Analysis Complete</em></p>
-                        <button class="abstract-button" onclick="toggleAbstract(this)">[Show Abstract]</button>
-                        <div class="publication-abstract">
-                            <p><strong>Abstract:</strong> This study investigates whether characteristics of pre-service teachers (PSTs) and their clinical teaching experiences predict their future effectiveness and retention as early career teachers. Using data from one of the largest university-based teacher education programs in Texas, the authors examine the relationship between PST attributes, clinical performance measures, and in-service outcomes. The analysis leverages administrative data, classroom observation scores, and student achievement growth to inform teacher preparation, hiring, and workforce policy in Texas.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="last-updated">
-                    <em>Last updated: February 2026</em>
+                <p class="contact-line">
+                    <strong>Email:</strong> <a href="mailto:yaj3ma@virginia.edu">yaj3ma@virginia.edu</a>
+                </p>
+                <p class="contact-line">
+                    <a href="https://scholar.google.com/citations?user=GUPuEdwAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/andrew-avitabile/" target="_blank">LinkedIn</a>
+                    <a href="https://bsky.app/profile/andrewavit.bsky.social" target="_blank">Bluesky</a>
+                </p>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <span class="nav-sep">|</span>
+                    <a href="CV.html">CV</a>
+                    <span class="nav-sep">|</span>
+                    <a href="#publications">Publications</a>
+                    <span class="nav-sep">|</span>
+                    <a href="#working-papers">Working Papers</a>
+                    <span class="nav-sep">|</span>
+                    <a href="#works-in-progress">Works in Progress</a>
                 </div>
             </div>
         </div>
+
+        <hr>
+
+        <div class="bio section" id="about">
+            <p>I am a fourth-year PhD student in Education Policy at the <strong>University of Virginia</strong> School of Education and Human Development and an Institute for Education Sciences (IES) Pre-doctoral Fellow. My research focuses on the adults in schools—especially teachers. My dissertation focuses on the teacher pipeline: how to improve preservice teacher development, how certification exams impact teacher supply and potential strategies to mitigate those effects, and policies aimed at improving teacher retention. I use a range of methods in my work, including natural language processing, quasi-experimental methods, and randomized controlled trials.</p>
+
+            <p>Before starting the PhD, I worked at the Indeed Hiring Lab, where I wrote about trends in the US labor market and  Abdul Latif Jameel Poverty Action Lab (J-PAL) In another life I taught English at a non-profit in Brazil. I also have work experience at MDRC, where I helped evaluate social policies, and at NERA Economic Consulting. I hold a Bachelor's Degree in Economics from The George Washington University.</p>
+
+            <p>You can find my complete CV <a href="CV.html">here</a>.</p>
+        </div>
+
+        <hr>
+
+        <div class="section" id="publications">
+            <h2>Publications</h2>
+
+            <div class="paper">
+                <p class="paper-title"><a href="https://doi.org/10.3102/0013189X241276814">"Why Do You Want to Be a Teacher? A Natural Language Processing Approach"</a></p>
+                <p class="authors">Bartanen, B., Kwok, A., <b>Avitabile, A.</b>, & Kim, B.</p>
+                <p class="journal"><span class="journal-name">Educational Researcher</span> (2024).</p>
+                <p class="paper-links">
+                    <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
+                </p>
+                <p class="media-line">In the Media: <a href="https://www.edsurge.com/news/2024-08-05-what-motivates-teachers-to-enter-the-professionl" target="_blank">EdSurge</a></p>
+                <div class="abstract">
+                    <p>Heightened concerns about the health of the teaching profession highlight the importance of studying the early teacher pipeline. This exploratory, descriptive article examines preservice teachers' expressed motivation for pursuing a teaching career. Using data from a large teacher education program in Texas, we use a natural language processing algorithm to categorize into topical groups roughly 2,800 essay responses to the prompt, "Explain why you decided to become a teacher." We identify 10 topics that largely reflect altruistic and intrinsic (although not extrinsic) reasons for teaching. The frequency of topics varied substantially by preservice teacher gender, race/ethnicity, and certification area. Intrinsic enjoyment of teaching and experiences with adversity predicted higher clinical teaching performance and lower attrition as a full-time teacher.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section" id="working-papers">
+            <h2>Working Papers</h2>
+
+            <div class="paper">
+                <p class="paper-title"><a href="https://edworkingpapers.com/ai25-1275">"Who Wants to Be a Teacher in America?"</a></p>
+                <p class="authors">Bartanen, B., <b>Avitabile, A.</b>, & Kwok, A.</p>
+                <p class="journal"><span class="journal-name">Revise and Resubmit, American Educational Research Journal</span>.</p>
+                <p class="paper-links">
+                    <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
+                </p>
+                <p class="media-line">In the Media: <a href="https://www.the74million.org/article/12-charts-that-defined-education-in-2025/" target="_blank">The74Million</a></p>
+                <div class="abstract">
+                    <p>Long-standing compositional disparities and more recent concerns about the health of the teaching profession highlight the need to increase our understanding of the pipeline into K--12 teaching. Leveraging data from 9 million college applicants across a 10-year period, we provide the most detailed description to date of who is interested in teaching in the United States. We document substantially lower interest among men, students of color, and high-achieving students. Comparing teaching to similar career paths, such as nursing or social work, we find that racial/ethnic disparities are far greater for teaching, but gender and academic achievement gaps are comparable or less severe. We also find evidence that students interested in teaching submit fewer applications, are less likely to apply to selective colleges, and tend to apply to colleges close to their home. Controlling for application behavior greatly attenuates the relationship between teaching interest and academic achievement, suggesting that ambition or a desire for prestige is a more salient predictor of who becomes a teacher than achievement. We find corroborating evidence from applicants' teacher-recommenders, who rate students interested in teaching as having less intellectual promise and self-confidence, but greater concern for others.</p>
+                </div>
+            </div>
+
+            <div class="paper">
+                <p class="paper-title"><a href="https://edworkingpapers.com/ai25-1203">"Using Large Language Models to Analyze Preservice Teacher Feedback and Reflections During Clinical Teaching"</a></p>
+                <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
+                <p class="journal"><span class="journal-name">Revise and Resubmit, Journal of Teacher Education</span>.</p>
+                <p class="paper-links">
+                    <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
+                    <a href="https://www.openicpsr.org/openicpsr/project/218861/version/V2/view" target="_blank">[Data]</a>
+                    <a href="https://github.com/avitabilea/pst-feedback-anlaysis" target="_blank">[Code]</a>
+                </p>
+                <div class="abstract">
+                    <p>Clinical teaching is vital for preservice teacher (PST) development, yet field supervisors' roles are understudied. This study analyzes over 11,000 supervisor evaluations and PST reflections from a Texas teacher preparation program using large language models to extract measures of feedback quality and content. Supervisor feedback often lacks key quality indicators: less than half of evaluations include areas for improvement or actionable next steps. Supervisors most frequently identify classroom management as needing improvement, whereas PST reflections more often focus on lesson planning. PSTs receiving classroom management feedback receive lower evaluation scores and are less likely to return to their placement schools as in-service teachers. These findings highlight an opportunity to improve supervisor feedback and better support PST growth during clinical teaching.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section" id="works-in-progress">
+            <h2>Works in Progress</h2>
+
+            <div class="paper">
+                <p class="paper-title">"Evaluating the Impact of a Comprehensive School Health Program in Zambia"</p>
+                <p class="authors">Lagarde, M., Imbiti, I., Grabowska, M., <b>Avitabile, A.</b>, & Beimba, G.</p>
+                <p class="status">Data Collection Phase</p>
+                <p class="paper-links">
+                    <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
+                </p>
+                <div class="abstract">
+                    <p>This study evaluates a comprehensive School Health Program (SHP) in Zambia through a cluster-randomized controlled trial involving 225 schools divided into three groups: control, full SHP, and mass drug administration only. While children under five receive significant health attention, school-age children (5-17) face high malaria morbidity with limited access to prevention and treatment, negatively impacting education through absenteeism and reduced cognitive abilities. Since 2015, the NGO Healthy Learners has partnered with Zambia's government to implement the SHP, which trains teachers as community health workers and equips schools with health rooms to provide diagnosis, treatment, and health education. Unlike limited school health programs, the SHP offers both preventive and curative care, leveraging the entire school community's resources. The research examines implementation, impact, added value, indirect effects, and long-term implications for human capital development, aiming to assess the effectiveness and cost-efficiency of this comprehensive school health model in improving health and educational outcomes.</p>
+                </div>
+            </div>
+
+            <div class="paper">
+                <p class="paper-title">"Identifying Effective K-12 Teachers Using Clinical Teaching Data"</p>
+                <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
+                <p class="status">Analysis Complete</p>
+                <p class="paper-links">
+                    <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
+                </p>
+                <div class="abstract">
+                    <p>This study investigates whether characteristics of pre-service teachers (PSTs) and their clinical teaching experiences predict their future effectiveness and retention as early career teachers. Using data from one of the largest university-based teacher education programs in Texas, the authors examine the relationship between PST attributes, clinical performance measures, and in-service outcomes. The analysis leverages administrative data, classroom observation scores, and student achievement growth to inform teacher preparation, hiring, and workforce policy in Texas.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="last-updated">Last updated: February 2026</p>
     </div>
-
-    <style>
-        /* Additional mobile-specific styles */
-        @media (max-width: 768px) {
-            .desktop-bio {
-                display: none !important;
-            }
-            
-            .mobile-bio .section {
-                margin-bottom: 0;
-            }
-            
-            .mobile-bio .section h2 {
-                margin-bottom: 10px;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .mobile-bio {
-                display: none;
-            }
-        }
-    </style>
 </body>
 </html>
