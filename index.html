@@ -7,234 +7,315 @@
         <meta name="description" content="Andrew Avitabile is a fourth-year PhD student in Education Policy at the University of Virginia, focusing on evaluating K-12 education policy, teacher labor markets, and education programs in low- and middle-income countries. IES Pre-doctoral Fellow with research experience in labor market trends, educational policy, and social impact evaluation.">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑🏻‍🏫</text></svg>">
 
-        <!-- Open Graph meta tags -->
         <meta property="og:title" content="Andrew Avitabile - PhD Student, University of Virginia">
         <meta property="og:description" content="Academic Research Website">
         <meta property="og:image" content="">
         <meta property="og:url" content="avitabilea.github.io">
 
-        <!-- Twitter Card meta tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Andrew Avitabile - PhD Student, University of Virginia">
         <meta name="twitter:description" content="Academic Research Website">
         <meta name="twitter:image" content="IMG_5988.JPG">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             body {
                 margin: 0;
-                padding: 20px;
-                font-family: 'Courier New', courier, monospace;
+                padding: 0;
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
                 font-size: 16px;
-                background-color: #ffffff;
-                color: #111111;
-                line-height: 1.6;
+                background-color: #f9f8f5;
+                color: #1e293b;
+                line-height: 1.75;
+            }
+
+            .top-bar {
+                height: 4px;
+                background-color: #334155;
             }
 
             .page {
-                max-width: 900px;
+                max-width: 860px;
                 margin: 0 auto;
-            }
-
-            h1 {
-                font-family: 'Courier New', courier, monospace;
-                font-size: 28px;
-                font-weight: bold;
-                margin: 0 0 2px 0;
-                color: #000000;
-            }
-
-            h2 {
-                font-family: 'Courier New', courier, monospace;
-                font-size: 18px;
-                font-weight: bold;
-                color: #000000;
-                margin: 0 0 12px 0;
-            }
-
-            h3 {
-                font-family: 'Courier New', courier, monospace;
-                font-size: 15px;
-                font-weight: bold;
-                color: #000000;
-                margin: 0 0 4px 0;
-            }
-
-            a {
-                color: #0000ff;
-                text-decoration: underline;
-            }
-
-            a:visited {
-                color: #800080;
-            }
-
-            a:hover {
-                color: #ff0000;
-            }
-
-            hr {
-                border: none;
-                border-top: 1px solid #cccccc;
-                margin: 20px 0;
-            }
-
-            .header {
-                text-align: left;
-                margin-bottom: 16px;
-            }
-
-            .subtitle {
-                font-size: 16px;
-                color: #444444;
-                margin: 0;
+                padding: 40px 32px;
             }
 
             .top-section {
                 display: flex;
-                gap: 24px;
+                gap: 32px;
                 align-items: flex-start;
-                margin-bottom: 4px;
+                margin-bottom: 28px;
             }
 
             .profile-pic {
-                width: 170px;
-                height: 170px;
-                border: 1px solid #999999;
+                width: 152px;
+                height: 152px;
                 background-size: cover;
                 background-position: center 20%;
                 flex-shrink: 0;
+                border-radius: 4px;
+                border: 1px solid #cbd5e1;
             }
 
             .top-info {
                 flex: 1;
+                padding-top: 2px;
             }
 
-            .contact-line {
-                margin: 8px 0;
-                font-size: 16px;
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+                color: #0f172a;
+                margin: 0 0 4px 0;
+                letter-spacing: -0.03em;
+                line-height: 1.2;
             }
 
-            .contact-line a {
-                margin-right: 6px;
+            .subtitle {
+                font-size: 15px;
+                color: #64748b;
+                margin: 0 0 14px 0;
             }
 
-            .nav-links {
-                margin: 10px 0;
-                font-size: 16px;
+            .contact-row {
+                font-size: 14px;
+                color: #475569;
+                margin: 0 0 8px 0;
             }
 
-            .nav-links a {
+            .contact-row a {
+                color: #475569;
+                text-decoration: none;
+            }
+
+            .contact-row a:hover {
+                color: #0f172a;
                 text-decoration: underline;
             }
 
-            .nav-sep {
-                color: #999999;
-                margin: 0 6px;
+            .social-links {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px 16px;
+                font-size: 14px;
+                font-weight: 500;
             }
 
-            .bio p {
-                margin: 0 0 12px 0;
+            .social-links a {
+                color: #1d4ed8;
+                text-decoration: none;
+            }
+
+            .social-links a:hover {
+                text-decoration: underline;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                border-top: 1px solid #e2e8f0;
+                border-bottom: 1px solid #e2e8f0;
+                margin-bottom: 36px;
+            }
+
+            nav a {
+                padding: 10px 16px;
+                font-size: 12px;
+                font-weight: 600;
+                color: #64748b;
+                text-decoration: none;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                transition: color 0.15s, background-color 0.15s;
+            }
+
+            nav a:first-child {
+                padding-left: 0;
+            }
+
+            nav a:hover {
+                color: #0f172a;
+                background-color: #f1f0ec;
             }
 
             .section {
-                margin-bottom: 24px;
+                margin-bottom: 36px;
+            }
+
+            h2 {
+                font-size: 11px;
+                font-weight: 600;
+                color: #94a3b8;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+                margin: 0 0 20px 0;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #e2e8f0;
+                display: block;
+            }
+
+            h3 {
+                font-size: 14px;
+                font-weight: 600;
+                color: #0f172a;
+                margin: 0 0 4px 0;
+            }
+
+            a {
+                color: #1d4ed8;
+                text-decoration: underline;
+            }
+
+            a:hover {
+                color: #1e40af;
+            }
+
+            hr {
+                border: none;
+                border-top: 1px solid #e2e8f0;
+                margin: 32px 0;
+            }
+
+            .bio p {
+                margin: 0 0 14px 0;
+                color: #334155;
+                font-size: 15px;
+            }
+
+            .bio p:last-child {
+                margin-bottom: 0;
             }
 
             .paper {
-                margin-bottom: 20px;
+                margin-bottom: 24px;
+                padding-left: 14px;
+                border-left: 2px solid #cbd5e1;
             }
 
             .paper-title {
-                font-weight: bold;
-                line-height: 1.4;
+                font-weight: 600;
+                font-size: 15px;
+                color: #0f172a;
+                line-height: 1.45;
+                margin: 0 0 3px 0;
             }
 
             .paper-title a {
-                color: #0000ff;
+                color: #0f172a;
+                text-decoration: none;
+            }
+
+            .paper-title a:hover {
+                color: #1d4ed8;
             }
 
             .authors {
-                color: #444444;
-                font-style: italic;
+                font-size: 14px;
+                color: #64748b;
                 margin: 2px 0;
+                font-style: normal;
             }
 
             .journal {
+                font-size: 14px;
+                color: #475569;
                 margin: 2px 0;
             }
 
             .journal-name {
-                font-weight: bold;
+                font-style: italic;
             }
 
             .paper-links {
-                margin: 4px 0;
+                margin: 6px 0 0 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2px 12px;
             }
 
-            .paper-links a, .paper-links span.toggle-link {
+            .paper-links a, .toggle-link {
+                font-size: 13px;
+                color: #1d4ed8;
+                text-decoration: none;
                 cursor: pointer;
-                margin-right: 10px;
-            }
-
-            .toggle-link {
-                color: #0000ff;
-                text-decoration: underline;
-                cursor: pointer;
-                font-family: 'Courier New', courier, monospace;
                 background: none;
                 border: none;
                 padding: 0;
+                font-family: inherit;
             }
 
-            .toggle-link:hover {
-                color: #ff0000;
+            .paper-links a:hover, .toggle-link:hover {
+                text-decoration: underline;
             }
 
             .media-line {
-                color: #444444;
-                margin: 2px 0;
+                font-size: 13px;
+                color: #94a3b8;
+                margin: 4px 0 0 0;
+            }
+
+            .media-line a {
+                color: #64748b;
+                text-decoration: none;
+            }
+
+            .media-line a:hover {
+                text-decoration: underline;
             }
 
             .abstract {
                 display: none;
-                margin: 8px 0 0 20px;
-                line-height: 1.5;
-                color: #222222;
+                margin: 10px 0 0 0;
+                font-size: 14px;
+                line-height: 1.7;
+                color: #475569;
+                background-color: #f1f0ec;
+                border: 1px solid #e2e8f0;
+                padding: 12px 16px;
             }
 
             .status {
-                color: #444444;
+                font-size: 13px;
+                color: #94a3b8;
                 font-style: italic;
                 margin: 2px 0;
             }
 
             .last-updated {
-                font-size: 13px;
-                color: #999999;
-                margin-top: 30px;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 48px;
+                padding-top: 12px;
+                border-top: 1px solid #e2e8f0;
             }
 
-            /* Hamburger menu styles */
             .hamburger-btn {
                 display: none;
-                background: none;
-                border: 1px solid #999;
-                font-family: 'Courier New', courier, monospace;
-                font-size: 24px;
+                background: #f1f0ec;
+                border: 1px solid #cbd5e1;
+                font-family: inherit;
+                font-size: 14px;
+                font-weight: 500;
                 cursor: pointer;
-                padding: 4px 10px;
-                color: #111;
-                line-height: 1;
-                margin-top: 10px;
+                padding: 6px 14px;
+                color: #475569;
+                margin-top: 12px;
             }
 
             .mobile-menu {
                 display: none;
                 flex-direction: column;
-                background: #f9f9f9;
-                border: 1px solid #ccc;
-                padding: 12px 16px;
-                margin-top: 10px;
+                background: #f9f8f5;
+                border: 1px solid #e2e8f0;
+                padding: 4px 0;
+                margin-bottom: 24px;
             }
 
             .mobile-menu.open {
@@ -242,12 +323,12 @@
             }
 
             .mobile-menu a {
-                font-family: 'Courier New', courier, monospace;
-                font-size: 16px;
-                padding: 8px 0;
-                border-bottom: 1px solid #eee;
+                font-size: 15px;
+                padding: 10px 16px;
+                border-bottom: 1px solid #f1f0ec;
                 text-decoration: none;
-                color: #0000ff;
+                color: #334155;
+                font-weight: 500;
             }
 
             .mobile-menu a:last-child {
@@ -255,49 +336,47 @@
             }
 
             .mobile-menu a:hover {
-                color: #ff0000;
+                background-color: #f1f0ec;
+                color: #0f172a;
             }
 
             .mobile-menu .menu-divider {
                 border: none;
-                border-top: 1px solid #ccc;
-                margin: 6px 0;
+                border-top: 1px solid #e2e8f0;
+                margin: 4px 0;
             }
 
-            @media (max-width: 600px) {
-                body {
-                    padding: 15px;
-                    font-size: 14px;
+            @media (max-width: 640px) {
+                .page {
+                    padding: 24px 18px;
                 }
 
                 h1 {
-                    font-size: 22px;
-                }
-
-                .header {
-                    text-align: center;
+                    font-size: 1.5rem;
                 }
 
                 .top-section {
                     flex-direction: column;
                     align-items: center;
                     text-align: center;
+                    gap: 20px;
+                    margin-bottom: 20px;
                 }
 
                 .profile-pic {
-                    width: 140px;
-                    height: 140px;
+                    width: 130px;
+                    height: 130px;
                 }
 
-                .top-info {
-                    text-align: center;
-                }
-
-                .nav-links {
+                .contact-row {
                     display: none;
                 }
 
-                .contact-line {
+                .social-links {
+                    justify-content: center;
+                }
+
+                nav {
                     display: none;
                 }
 
@@ -309,6 +388,7 @@
     </head>
 
 <body>
+    <div class="top-bar"></div>
     <script>
         function toggleMenu() {
             document.getElementById('mobileMenu').classList.toggle('open');
@@ -316,11 +396,9 @@
         function closeMenu() {
             document.getElementById('mobileMenu').classList.remove('open');
         }
-
         function toggleAbstract(link) {
             var paper = link.closest('.paper');
             var abstract = paper.querySelector('.abstract');
-
             if (abstract.style.display === 'block') {
                 abstract.style.display = 'none';
                 link.textContent = '[Abstract]';
@@ -335,32 +413,26 @@
         <div class="top-section">
             <div class="profile-pic" style="background-image: url('https://raw.githubusercontent.com/avitabilea/avitabilea.github.io/master/IMG_5988.JPG');"></div>
             <div class="top-info">
-                <div class="header">
-                    <h1>Andrew Avitabile</h1>
-                    <p class="subtitle">PhD Student, University of Virginia</p>
-                </div>
-                <p class="contact-line">
-                    <strong>Email:</strong> <a href="mailto:yaj3ma@virginia.edu">yaj3ma@virginia.edu</a>
-                </p>
-                <p class="contact-line">
+                <h1>Andrew Avitabile</h1>
+                <p class="subtitle">PhD Student &middot; University of Virginia</p>
+                <p class="contact-row"><strong>Email:</strong> <a href="mailto:yaj3ma@virginia.edu">yaj3ma@virginia.edu</a></p>
+                <div class="social-links">
                     <a href="https://scholar.google.com/citations?user=GUPuEdwAAAAJ&hl=en" target="_blank">Google Scholar</a>
                     <a href="https://www.linkedin.com/in/andrew-avitabile/" target="_blank">LinkedIn</a>
                     <a href="https://bsky.app/profile/andrewavit.bsky.social" target="_blank">Bluesky</a>
-                </p>
-                <div class="nav-links">
-                    <a href="#about">About</a>
-                    <span class="nav-sep">|</span>
-                    <a href="CV.html">CV</a>
-                    <span class="nav-sep">|</span>
-                    <a href="#publications">Publications</a>
-                    <span class="nav-sep">|</span>
-                    <a href="#working-papers">Working Papers</a>
-                    <span class="nav-sep">|</span>
-                    <a href="#works-in-progress">Works in Progress</a>
                 </div>
                 <button class="hamburger-btn" onclick="toggleMenu()">&#9776; Menu</button>
             </div>
         </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="CV.html">CV</a>
+            <a href="#publications">Publications</a>
+            <a href="#working-papers">Working Papers</a>
+            <a href="#works-in-progress">Works in Progress</a>
+        </nav>
+
         <div class="mobile-menu" id="mobileMenu">
             <a href="#about" onclick="closeMenu()">About</a>
             <a href="CV.html">CV</a>
@@ -373,14 +445,12 @@
             <a href="https://bsky.app/profile/andrewavit.bsky.social" target="_blank">Bluesky</a>
         </div>
 
-        <hr>
-
         <div class="bio section" id="about">
-            <p>I am a fourth-year PhD student in Education Policy at the <strong>University of Virginia</strong> School of Education and Human Development and an Institute for Education Sciences (IES) Pre-doctoral Fellow. My research focuses on the adults in schools—especially teachers. In my dissertation, I study the teacher pipeline by exploring ways to improve preservice teacher development, how certification exams impact teacher supply and potential strategies to mitigate those effects, and policies aimed at improving teacher retention. I use a range of methods in my work, including natural language processing, quasi-experimental methods, and randomized controlled trials (RCTs).</p>
+            <p>I am a fourth-year PhD student in Education Policy at the <strong>University of Virginia</strong> School of Education and Human Development and an Institute for Education Sciences (IES) Pre-doctoral Fellow. My research focuses on the adults in schools&mdash;especially teachers. In my dissertation, I study the teacher pipeline by exploring ways to improve preservice teacher development, how certification exams impact teacher supply and potential strategies to mitigate those effects, and policies aimed at improving teacher retention. Alongside this work, I maintain an active interest in education in low- and middle-income countries, including as a co-investigator on an ongoing cluster RCT evaluating a school health program in Zambia. I use a range of methods across these projects, including natural language processing, quasi-experimental methods, and randomized controlled trials (RCTs).</p>
 
-            <p>Before starting the PhD, I worked at the Indeed Hiring Lab, where I used job postings data to explore trends in the US labor market. Before that, I worked at the Abdul Latif Jameel Poverty Action Lab (J-PAL), where I helped improve the measurement of learning outcomes in RCTs. In another life I taught English at a non-profit in Brazil. I also have work experience at MDRC, where I helped evaluate social policies, and at NERA Economic Consulting working on high-profile anti-trust litigation cases. I hold a Bachelor's Degree in Economics from The George Washington University.</p>
+            <p>Before starting the PhD, I worked at the Indeed Hiring Lab, where I used job postings data to explore trends in the US labor market. Before that, I worked at the Abdul Latif Jameel Poverty Action Lab (J-PAL), where I helped improve the measurement of learning outcomes in RCTs. In another life I taught English at a non-profit in Brazil. I also have work experience at MDRC, where I helped evaluate social policies, and at NERA Economic Consulting working on high-profile anti-trust litigation cases. I hold a Bachelor&rsquo;s Degree in Economics from The George Washington University.</p>
 
-            <p><strong>I am on the 2026-27 job market.</strong></p>
+            <p><strong>I am on the 2026&ndash;27 job market.</strong></p>
 
             <p>You can find my complete CV <a href="CV.html">here</a>.</p>
         </div>
@@ -391,8 +461,8 @@
             <h2>Publications</h2>
 
             <div class="paper">
-                <p class="paper-title"><a href="https://doi.org/10.3102/0013189X241276814">"Why Do You Want to Be a Teacher? A Natural Language Processing Approach"</a></p>
-                <p class="authors">Bartanen, B., Kwok, A., <b>Avitabile, A.</b>, & Kim, B.</p>
+                <p class="paper-title"><a href="https://doi.org/10.3102/0013189X241276814">&ldquo;Why Do You Want to Be a Teacher? A Natural Language Processing Approach&rdquo;</a></p>
+                <p class="authors">Bartanen, B., Kwok, A., <b>Avitabile, A.</b>, &amp; Kim, B.</p>
                 <p class="journal"><span class="journal-name">Educational Researcher</span> (2024).</p>
                 <p class="paper-links">
                     <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
@@ -410,22 +480,22 @@
             <h2>Working Papers</h2>
 
             <div class="paper">
-                <p class="paper-title"><a href="https://edworkingpapers.com/ai25-1275">"Who Wants to Be a Teacher in America?"</a></p>
-                <p class="authors">Bartanen, B., <b>Avitabile, A.</b>, & Kwok, A.</p>
+                <p class="paper-title"><a href="https://edworkingpapers.com/ai25-1275">&ldquo;Who Wants to Be a Teacher in America?&rdquo;</a></p>
+                <p class="authors">Bartanen, B., <b>Avitabile, A.</b>, &amp; Kwok, A.</p>
                 <p class="journal"><span class="journal-name">Revise and Resubmit, American Educational Research Journal</span>.</p>
                 <p class="paper-links">
                     <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
                 </p>
                 <p class="media-line">In the Media: <a href="https://www.the74million.org/article/12-charts-that-defined-education-in-2025/" target="_blank">The74Million</a></p>
                 <div class="abstract">
-                    <p>Long-standing compositional disparities and more recent concerns about the health of the teaching profession highlight the need to increase our understanding of the pipeline into K--12 teaching. Leveraging data from 9 million college applicants across a 10-year period, we provide the most detailed description to date of who is interested in teaching in the United States. We document substantially lower interest among men, students of color, and high-achieving students. Comparing teaching to similar career paths, such as nursing or social work, we find that racial/ethnic disparities are far greater for teaching, but gender and academic achievement gaps are comparable or less severe. We also find evidence that students interested in teaching submit fewer applications, are less likely to apply to selective colleges, and tend to apply to colleges close to their home. Controlling for application behavior greatly attenuates the relationship between teaching interest and academic achievement, suggesting that ambition or a desire for prestige is a more salient predictor of who becomes a teacher than achievement. We find corroborating evidence from applicants' teacher-recommenders, who rate students interested in teaching as having less intellectual promise and self-confidence, but greater concern for others.</p>
+                    <p>Long-standing compositional disparities and more recent concerns about the health of the teaching profession highlight the need to increase our understanding of the pipeline into K&ndash;12 teaching. Leveraging data from 9 million college applicants across a 10-year period, we provide the most detailed description to date of who is interested in teaching in the United States. We document substantially lower interest among men, students of color, and high-achieving students. Comparing teaching to similar career paths, such as nursing or social work, we find that racial/ethnic disparities are far greater for teaching, but gender and academic achievement gaps are comparable or less severe. We also find evidence that students interested in teaching submit fewer applications, are less likely to apply to selective colleges, and tend to apply to colleges close to their home. Controlling for application behavior greatly attenuates the relationship between teaching interest and academic achievement, suggesting that ambition or a desire for prestige is a more salient predictor of who becomes a teacher than achievement. We find corroborating evidence from applicants' teacher-recommenders, who rate students interested in teaching as having less intellectual promise and self-confidence, but greater concern for others.</p>
                 </div>
             </div>
 
             <div class="paper">
-                <p class="paper-title"><a href="https://edworkingpapers.com/ai25-1203">"Using Large Language Models to Analyze Preservice Teacher Feedback and Reflections During Clinical Teaching"</a></p>
-                <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
-                <p class="journal"><span class="journal-name">Revise and Resubmit, Journal of Teacher Education</span>.</p>
+                <p class="paper-title"><a href="https://edworkingpapers.com/ai25-1203">&ldquo;Using Large Language Models to Analyze Preservice Teacher Feedback and Reflections During Clinical Teaching&rdquo;</a></p>
+                <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., &amp; Kwok, A.</p>
+                <p class="journal"><span class="journal-name">Under Review, Education Finance and Policy</span>.</p>
                 <p class="paper-links">
                     <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
                     <a href="https://www.openicpsr.org/openicpsr/project/218861/version/V2/view" target="_blank">[Data]</a>
@@ -443,11 +513,12 @@
             <h2>Works in Progress</h2>
 
             <div class="paper">
-                <p class="paper-title">"Evaluating the Impact of a Comprehensive School Health Program in Zambia"</p>
-                <p class="authors">Lagarde, M., Imbiti, I., Grabowska, M., <b>Avitabile, A.</b>, & Beimba, G.</p>
+                <p class="paper-title">&ldquo;Evaluating the Impact of a Comprehensive School Health Program in Zambia&rdquo;</p>
+                <p class="authors">Lagarde, M., Imbiti, I., Grabowska, M., <b>Avitabile, A.</b>, &amp; Beimba, G.</p>
                 <p class="status">Data Collection Phase</p>
                 <p class="paper-links">
                     <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>
+                    <a href="https://www.socialscienceregistry.org/trials/13890" target="_blank">[Pre-registration]</a>
                 </p>
                 <div class="abstract">
                     <p>This study evaluates a comprehensive School Health Program (SHP) in Zambia through a cluster-randomized controlled trial involving 225 schools divided into three groups: control, full SHP, and mass drug administration only. While children under five receive significant health attention, school-age children (5-17) face high malaria morbidity with limited access to prevention and treatment, negatively impacting education through absenteeism and reduced cognitive abilities. Since 2015, the NGO Healthy Learners has partnered with Zambia's government to implement the SHP, which trains teachers as community health workers and equips schools with health rooms to provide diagnosis, treatment, and health education. Unlike limited school health programs, the SHP offers both preventive and curative care, leveraging the entire school community's resources. The research examines implementation, impact, added value, indirect effects, and long-term implications for human capital development, aiming to assess the effectiveness and cost-efficiency of this comprehensive school health model in improving health and educational outcomes.</p>
@@ -455,8 +526,8 @@
             </div>
 
             <div class="paper">
-                <p class="paper-title">"Identifying Effective K-12 Teachers Using Clinical Teaching Data"</p>
-                <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., & Kwok, A.</p>
+                <p class="paper-title">&ldquo;Identifying Effective K-12 Teachers Using Clinical Teaching Data&rdquo;</p>
+                <p class="authors"><b>Avitabile, A.</b>, Bartanen, B., &amp; Kwok, A.</p>
                 <p class="status">Analysis Complete</p>
                 <p class="paper-links">
                     <span class="toggle-link" onclick="toggleAbstract(this)">[Abstract]</span>

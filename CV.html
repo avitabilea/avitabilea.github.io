@@ -7,131 +7,154 @@
     <meta name="description" content="Andrew Avitabile is a fourth-year PhD student in Education Policy at the University of Virginia, focusing on evaluating K-12 education policy, teacher labor markets, and education programs in low- and middle-income countries. IES Pre-doctoral Fellow with research experience in labor market trends, educational policy, and social impact evaluation.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧑🏻‍🏫</text></svg>">
 
-    <!-- Open Graph meta tags -->
     <meta property="og:title" content="Andrew Avitabile - Curriculum Vitae">
     <meta property="og:description" content="Academic Research Website - CV">
     <meta property="og:image" content="">
     <meta property="og:url" content="avitabilea.github.io">
 
-    <!-- Twitter Card meta tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Andrew Avitabile - Curriculum Vitae">
     <meta name="twitter:description" content="Academic Research Website - CV">
     <meta name="twitter:image" content="IMG_5988.JPG">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            padding: 20px;
-            font-family: 'Courier New', courier, monospace;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             font-size: 16px;
-            background-color: #ffffff;
-            color: #222222;
-            line-height: 1.6;
+            background-color: #f9f8f5;
+            color: #1e293b;
+            line-height: 1.75;
+        }
+
+        .top-bar {
+            height: 4px;
+            background-color: #334155;
         }
 
         .page {
-            max-width: 900px;
+            max-width: 860px;
             margin: 0 auto;
-        }
-
-        h1 {
-            font-family: 'Courier New', courier, monospace;
-            font-size: 28px;
-            font-weight: bold;
-            margin: 0 0 2px 0;
-            color: #000000;
-        }
-
-        h2 {
-            font-family: 'Courier New', courier, monospace;
-            font-size: 18px;
-            font-weight: bold;
-            color: #000000;
-            margin: 0 0 12px 0;
-        }
-
-        a {
-            color: #0000ff;
-            text-decoration: underline;
-        }
-
-        a:visited {
-            color: #800080;
-        }
-
-        a:hover {
-            color: #ff0000;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #cccccc;
-            margin: 20px 0;
+            padding: 40px 32px;
         }
 
         .header {
-            margin-bottom: 16px;
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin: 0 0 4px 0;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
         }
 
         .subtitle {
-            font-size: 16px;
-            color: #555555;
+            font-size: 15px;
+            color: #64748b;
             margin: 0;
         }
 
-        .nav-links {
-            margin: 10px 0;
-            font-size: 16px;
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 36px;
         }
 
-        .nav-links a {
+        nav a {
+            padding: 10px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
+            text-decoration: none;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: color 0.15s, background-color 0.15s;
+        }
+
+        nav a:first-child {
+            padding-left: 0;
+        }
+
+        nav a:hover {
+            color: #0f172a;
+            background-color: #f1f0ec;
+        }
+
+        h2 {
+            font-size: 11px;
+            font-weight: 600;
+            color: #94a3b8;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin: 0 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            display: block;
+        }
+
+        a {
+            color: #1d4ed8;
             text-decoration: underline;
         }
 
-        .nav-sep {
-            color: #999999;
-            margin: 0 6px;
+        a:hover {
+            color: #1e40af;
         }
 
         .cv-download {
-            margin: 16px 0;
+            margin: 0 0 20px 0;
+            font-size: 15px;
         }
 
         .cv-embed {
             width: 100%;
             height: 800px;
-            border: 1px solid #999999;
+            border: 1px solid #cbd5e1;
             background-color: #ffffff;
         }
 
         .last-updated {
-            font-size: 13px;
-            color: #999999;
-            margin-top: 30px;
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 48px;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
         }
 
-        /* Hamburger menu styles */
         .hamburger-btn {
             display: none;
-            background: none;
-            border: 1px solid #999;
-            font-family: 'Courier New', courier, monospace;
-            font-size: 24px;
+            background: #f1f0ec;
+            border: 1px solid #cbd5e1;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 500;
             cursor: pointer;
-            padding: 4px 10px;
-            color: #111;
-            line-height: 1;
-            margin-top: 10px;
+            padding: 6px 14px;
+            color: #475569;
+            margin-top: 12px;
         }
 
         .mobile-menu {
             display: none;
             flex-direction: column;
-            background: #f9f9f9;
-            border: 1px solid #ccc;
-            padding: 12px 16px;
-            margin-top: 10px;
+            background: #f9f8f5;
+            border: 1px solid #e2e8f0;
+            padding: 4px 0;
+            margin-bottom: 24px;
         }
 
         .mobile-menu.open {
@@ -139,12 +162,12 @@
         }
 
         .mobile-menu a {
-            font-family: 'Courier New', courier, monospace;
-            font-size: 16px;
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
+            font-size: 15px;
+            padding: 10px 16px;
+            border-bottom: 1px solid #f1f0ec;
             text-decoration: none;
-            color: #0000ff;
+            color: #334155;
+            font-weight: 500;
         }
 
         .mobile-menu a:last-child {
@@ -152,34 +175,30 @@
         }
 
         .mobile-menu a:hover {
-            color: #ff0000;
+            background-color: #f1f0ec;
+            color: #0f172a;
         }
 
         .mobile-menu .menu-divider {
             border: none;
-            border-top: 1px solid #ccc;
-            margin: 6px 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 4px 0;
         }
 
-        @media (max-width: 600px) {
-            body {
-                padding: 15px;
-                font-size: 14px;
+        @media (max-width: 640px) {
+            .page {
+                padding: 24px 18px;
             }
 
             h1 {
-                font-size: 22px;
-            }
-
-            .header {
-                text-align: center;
+                font-size: 1.5rem;
             }
 
             .cv-embed {
                 height: 500px;
             }
 
-            .nav-links {
+            nav {
                 display: none;
             }
 
@@ -191,6 +210,7 @@
 </head>
 
 <body>
+    <div class="top-bar"></div>
     <script>
         function toggleMenu() {
             document.getElementById('mobileMenu').classList.toggle('open');
@@ -203,21 +223,18 @@
     <div class="page">
         <div class="header">
             <h1>Andrew Avitabile</h1>
-            <p class="subtitle">PhD Student, University of Virginia</p>
+            <p class="subtitle">PhD Student &middot; University of Virginia</p>
             <button class="hamburger-btn" onclick="toggleMenu()">&#9776; Menu</button>
         </div>
 
-        <div class="nav-links">
+        <nav>
             <a href="index.html">Home</a>
-            <span class="nav-sep">|</span>
             <a href="CV.html">CV</a>
-            <span class="nav-sep">|</span>
             <a href="index.html#publications">Publications</a>
-            <span class="nav-sep">|</span>
             <a href="index.html#working-papers">Working Papers</a>
-            <span class="nav-sep">|</span>
             <a href="index.html#works-in-progress">Works in Progress</a>
-        </div>
+        </nav>
+
         <div class="mobile-menu" id="mobileMenu">
             <a href="index.html" onclick="closeMenu()">Home</a>
             <a href="CV.html">CV</a>
@@ -229,8 +246,6 @@
             <a href="https://www.linkedin.com/in/andrew-avitabile/" target="_blank">LinkedIn</a>
             <a href="https://bsky.app/profile/andrewavit.bsky.social" target="_blank">Bluesky</a>
         </div>
-
-        <hr>
 
         <h2>Curriculum Vitae</h2>
 
