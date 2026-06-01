@@ -3,7 +3,14 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git -C \"d:/Dropbox/Dropbox/avitabilea.github.io\" status)",
+      "Bash(git -C \"d:/Dropbox/Dropbox/avitabilea.github.io\" diff)",
+      "Bash(git -C \"d:/Dropbox/Dropbox/avitabilea.github.io\" log --oneline -5)",
+      "Bash(git -C \"d:/Dropbox/Dropbox/avitabilea.github.io\" add index.html CV.html Avitabile_CV.pdf)",
+      "Bash(git -C d:/Dropbox/Dropbox/avitabilea.github.io commit -m ' *)",
+      "Bash(git -C \"d:/Dropbox/Dropbox/avitabilea.github.io\" push)",
+      "Bash(git -C \"d:/Dropbox/Dropbox/avitabilea.github.io\" add index.html)"
     ]
   }
 }
